@@ -1,0 +1,20 @@
+body{
+    background: lightblue;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+
+header {
+    position:fixed;
+    top:0;
+    left: 0;
+    background-color: black;
+    color: gold;
+    width: 100%;
+    padding: 10px;
+    border-bottom: 1px solid gold;
+}
+
+main {
+    margin-top: 50px;
+}
