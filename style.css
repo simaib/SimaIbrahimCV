@@ -1,20 +1,24 @@
-body{
-    background: lightblue;
-    font-family: 'Times New Roman', Times, serif;
-}
+style>
+    header {
+        position:fixed;
+        top: 0px;;
+        left: 0;
+        right: 0;
+        background-color: rgb(225, 216, 206);
+        color: rgb(3, 3, 1);
+        width: 100%;
+        padding: 20px;
+        border-bottom: 1px solid rgb(0, 0, 0);
 
+    }
 
-header {
-    position:fixed;
-    top:0;
-    left: 0;
-    background-color: black;
-    color: gold;
-    width: 100%;
-    padding: 10px;
-    border-bottom: 1px solid gold;
-}
+    main {
+        margin-top: 20px;
+        text-align: center;
+    }
 
-main {
-    margin-top: 50px;
-}
+    body {
+        background-color: rgb(219, 192, 167);
+        font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif
+    }
+
