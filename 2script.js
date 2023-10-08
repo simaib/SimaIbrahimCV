@@ -1,28 +1,20 @@
 let subject = "Javascript"
 console.log("Hello " + subject)
 
-let chooseColor = document.getElementById("chooseColor");
-let colorBtn = document.getElementById("colorBtn");
 
-let age = document.getElementById("contact");
-let testAge = document.getElementById("testAge");
-let content = document.getElementById("content");
-
-colorBtn.addEventListener("click", (e) => {
-    console.log("Klick på knapp")
-
-    let chosenColor = chooseColor.value;
-    console.log(chosenColor);
-    document.body.style.backgroundColor = chosenColor;
-})
-
-testAge.addEventListener("click", (e) => {
-
-
-    if (mejl) {
-        content.innerText = "Du kommer att bli kontaktad via mejl!";
-    } else  {
-        content.innerText = "Du kommer att bli kontaktad via telefon!";
-
+document.getElementById("toggleInfo").addEventListener("click", function() {
+    var searchInput = document.getElementById("searchInput").value.toLowerCase();
+    var infoType1 = document.getElementById("infoType1");
+    var infoType2 = document.getElementById("infoType2");
+    
+    if (searchInput.includes("mejl")) {
+        infoType1.style.display = "block";
+        infoType2.style.display = "none";
+    } else if (searchInput.includes("telefon")) {
+        infoType1.style.display = "none";
+        infoType2.style.display = "block";
+    } else {
+        infoType1.style.display = "none";
+        infoType2.style.display = "none";
     }
-})
+});
